@@ -1,6 +1,11 @@
 public class Jugar {
+  static int FILOSOFOS = 5;
+  
   public void main (String[] args){
-    Array filosofos = [1,2,3,4,5]
-      
+    Palillo palillos[] = new Palillo[FILOSOFOS];
+    Filosofo filosofos[] = new Filosofo[FILOSOFOS];
+    for (int i = 1; i <= FILOSOFOS; i++){
+      filosofos[i] = new Filosofo(
+    } 
   }
 }
