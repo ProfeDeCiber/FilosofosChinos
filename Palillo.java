@@ -9,22 +9,26 @@
 
 public class Palillo {
   int id;
-  libre boolean = false;
+  boolean libre = true;
   
-  public Palillo(idPalillo) {
+  public Palillo(int idPalillo) {
     this.id = idPalillo;
   }
   
-  public libre(){
+  public Palillo() {
+    this.id = -1;
+  }
+  
+  public boolean libre(){
     return this.libre;
   }
   
-  public coger(){
+  public void coger(){
     this.libre = false;
     System.out.println ("Palillo " + this.id + " cogido.");
   }
   
-  public soltar() {
+  public void soltar() {
     this.libre = true;
     System.out.println ("Palillo " + this.id + " soltado.");
   }
